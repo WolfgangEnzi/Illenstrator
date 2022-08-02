@@ -111,9 +111,9 @@ if __name__ == "__main__":
 
     # function that updates the arrays and colorbar limits of plots
     def update_pcm(plot, cbar, data):
-        plot.set_array(data[:-1, :-1].ravel())
+        plot.set_array(data.ravel())
         plot.set_clim(np.min(data), np.max(data))
-
+       
     # ==========================================================================
 
     # function that draws an ellipse into a given subplot ax
